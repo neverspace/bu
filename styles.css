@@ -23,20 +23,18 @@ body {
 	margin-top: 0;
 }
 
-#philo-links ul {
+.paperlinks ul {
 	display: inline-block;
 	text-align: left;
 	vertical-align: top;
 	margin: 0;
 }
-#philo-links img {
+
+.paperlinks img {
 	text-align: right;
 }
-#philo-links h2 {
-	margin: 0 ;
-	padding: 0;
-}
-#philo-links { display: inline-block; }	
+
+/*.paperlinks { display: inline-block; }*/
 
 #fern {
 	position: absolute;
@@ -51,6 +49,20 @@ body {
 	background-color: lightgray;
 }
 
-/*#content a:visited {
-	color: darkred;
-}*/
+.catimg {
+	margin-right: 0.5em;
+	vertical-align: top;
+	width: 1em;
+}
+
+@media only screen and (max-width: 725px) {
+	#content { padding: 2%; }
+	.paperlinks ul  { margin-left: -1em;}
+	#bird {
+		position: absolute;
+		right: 0;
+		width: 30%;
+		opacity: 10%;
+	}
+	#fern { opacity: 10%; }
+}
