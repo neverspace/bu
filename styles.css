@@ -15,12 +15,31 @@ body {
 
 #content li {
 	max-width: 30em;
-	/*border-bottom: 1px solid black;*/
 	margin-bottom: 5px;
 }
 
 #content h1 {
 	margin-top: 0;
+}
+
+#content p {
+	max-width: 40em;
+}
+
+#liz {
+	font-family: cursive;
+	font-weight: bold;
+
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: rainbow-animation 35s linear infinite;
+}
+
+@keyframes rainbow-animation {
+	to {
+		background-position: 100vh;
+	}
 }
 
 .paperlinks ul {
@@ -34,7 +53,6 @@ body {
 	text-align: right;
 }
 
-/*.paperlinks { display: inline-block; }*/
 
 #fern {
 	position: absolute;
@@ -57,6 +75,10 @@ body {
 
 @media only screen and (max-width: 725px) {
 	#content { padding: 2%; }
+	#greeting {
+		display: block;
+		text-align: center;
+	}
 	.paperlinks ul  { margin-left: -1em;}
 	#bird {
 		position: absolute;
@@ -65,4 +87,4 @@ body {
 		opacity: 10%;
 	}
 	#fern { opacity: 10%; }
-}
+	}
